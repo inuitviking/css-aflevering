@@ -1,0 +1,31 @@
+footer.flex{
+	flex-direction: column !important;
+	flex-wrap: wrap;
+	address, small{
+		width: 100% !important;
+		float: none !important;
+	}
+	address{
+		margin-bottom: 10px;
+		ul{
+			float: left !important;
+			li{
+				float: none !important;
+				a{
+					position: relative;
+				}
+				a::after{
+					position: absolute;
+					bottom: 0;
+					margin-top: 0 !important;
+				}
+			}
+		}
+	}
+	small{
+		span{
+			position: relative !important;
+			bottom: 0 !important;
+		}
+	}
+}

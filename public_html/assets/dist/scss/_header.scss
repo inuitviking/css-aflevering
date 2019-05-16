@@ -1,17 +1,8 @@
-/* ++++ BOOTSTRAP / FONTAWESOME ++++ */
-
-@import "../node_modules/bootstrap/scss/bootstrap";
-//Wanted to run sass with this one, but that didn't work for some reason
-@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
-
-/* ++++ FONTS ++++ */
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
-
-
 // General
 body{
-	max-width: 1200px; //Change this when you remove the border
+	max-width: 1200px;
 	margin: 0 auto;
+	overflow: hidden;
 	a{
 		outline: none;
 	}
@@ -75,9 +66,11 @@ header{
 	}
 
 	nav{
-		// box-sizing: content-box;
 		padding-left: 0px !important;
 		padding-right: 0px !important;
+		.icon{
+			display: none;
+		}
 		ul{
 			padding: 0;
 			margin: 0;

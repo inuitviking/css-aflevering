@@ -9659,9 +9659,76 @@ h3 {
   }
 }
 /* ++++ FONTS ++++ */
+/* ++++ STYLESHEETS ++++ */
+@media (max-width: 852px) {
+  header .row:last-of-type nav.col-4, header .row:first-of-type address.col-9 {
+    display: none !important;
+  }
+  header nav {
+    width: 100% !important;
+    display: block !important;
+  }
+  header nav .icon {
+    display: block !important;
+    color: black;
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+  header nav .icon:hover {
+    text-decoration: none;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav ul.responsive {
+    position: relative;
+    display: block;
+  }
+  header nav ul.responsive li {
+    float: none;
+    display: inline;
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul.responsive li a {
+    transition: none;
+    text-align: left;
+  }
+
+  footer.flex {
+    flex-direction: column !important;
+    flex-wrap: wrap;
+  }
+  footer.flex address, footer.flex small {
+    width: 100% !important;
+    float: none !important;
+  }
+  footer.flex address {
+    margin-bottom: 10px;
+  }
+  footer.flex address ul {
+    float: left !important;
+  }
+  footer.flex address ul li {
+    float: none !important;
+  }
+  footer.flex address ul li a {
+    position: relative;
+  }
+  footer.flex address ul li a::after {
+    position: absolute;
+    bottom: 0;
+    margin-top: 0 !important;
+  }
+  footer.flex small span {
+    position: relative !important;
+    bottom: 0 !important;
+  }
+}
 body {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 body a {
   outline: none;
@@ -9721,6 +9788,9 @@ header nav {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
+header nav .icon {
+  display: none;
+}
 header nav ul {
   padding: 0;
   margin: 0;
@@ -9769,6 +9839,56 @@ header nav:last-of-type ul a {
 header .row:last-of-type {
   margin: 0 auto;
   border-top: 1px solid lightgray;
+}
+
+footer.flex {
+  display: flex;
+  flex-direction: row-reverse;
+}
+footer.flex address {
+  width: 80%;
+  overflow: hidden;
+  margin-bottom: 1px;
+}
+footer.flex address ul {
+  margin-top: 20px;
+  float: right;
+}
+footer.flex address ul li {
+  list-style: none;
+  float: left;
+  padding: 10px;
+}
+footer.flex address ul li a {
+  color: black;
+  transition: all 0.3s;
+}
+footer.flex address ul li a:hover {
+  text-decoration: none;
+  color: #0056b3;
+}
+footer.flex address ul li a::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background-color: #000;
+  transition: all 0.3s;
+  float: right;
+  margin-top: -1px;
+}
+footer.flex address ul li a:hover::after {
+  width: 100%;
+  background-color: #0056b3;
+}
+footer.flex small {
+  width: 20%;
+  position: relative;
+}
+footer.flex small span {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

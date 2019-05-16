@@ -1,0 +1,15 @@
+/* ++++ BOOTSTRAP / FONTAWESOME ++++ */
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+//Wanted to run sass with this one, but that didn't work for some reason
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+/* ++++ FONTS ++++ */
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+/* ++++ STYLESHEETS ++++ */
+@media (max-width: 852px){
+	@import "_mobile.scss";
+}
+@import "_header.scss";
+@import "_footer.scss";

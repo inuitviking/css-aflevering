@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?=ucfirst($page) ?></title>
 		<!-- Dependencies -->
 		<script src="assets/dist/node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
@@ -11,12 +11,13 @@
 		<!-- My stuff -->
 		<script src="assets/dist/js/custom.js" charset="utf-8"></script>
 		<link rel="stylesheet" href="assets/dist/css/stylesheet.css">
+
 	</head>
-	<body>
+	<body onload="init()">
 
 		<header>
 			<div class="row">
-				<div class="col-3 logo">
+				<div class="logo" id="logo">
 					<h1><a href="#">BullsEye</a></h1>
 				</div>
 
@@ -30,8 +31,9 @@
 				</address>
 			</div>
 			<div class="row">
-				<nav class="col-6">
-					<ul>
+				<nav id="mainNav">
+					<a href="javascript:void(0);" onclick="responsiveNav()" class="icon">☰</a>
+					<ul class="topNav" id="topNav">
 						<li><a href="home">Home</a></li>
 						<li><a href="products">Products</a></li>
 						<li><a href="blog">Blog</a></li>
@@ -39,7 +41,7 @@
 						<li><a href="contact">Contact</a></li>
 					</ul>
 				</nav>
-				<nav class="col-6">
+				<nav class="col-4">
 					<ul>
 						<li><a target="_blank" href="https://facebook.com" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
 						<li><a target="_parent" href="https://twitter.com" data-toggle="tooltip" title="Twitter"><span class="fab fa-twitter"></span></a></li>
