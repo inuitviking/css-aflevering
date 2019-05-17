@@ -1,6 +1,7 @@
 footer.flex{
 	display: flex;
 	flex-direction: row-reverse;
+	border-top: 1px solid lightgray;
 	address{
 		width: 80%;
 		overflow: hidden;

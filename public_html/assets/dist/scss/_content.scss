@@ -1,0 +1,20 @@
+main{
+	padding: 0 10px;
+	a{
+		display: inline-block;
+		width: 100%;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+	a::after{
+		content: "";
+		display: inline-block;
+		height: 1px;
+		background-color: black;
+		width: 0;
+	}
+	a:hover::after{
+		width: 100%;
+	}
+}

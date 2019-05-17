@@ -9844,6 +9844,7 @@ header .row:last-of-type {
 footer.flex {
   display: flex;
   flex-direction: row-reverse;
+  border-top: 1px solid lightgray;
 }
 footer.flex address {
   width: 80%;
@@ -9889,6 +9890,27 @@ footer.flex small span {
   position: absolute;
   bottom: 25px;
   left: 10px;
+}
+
+main {
+  padding: 0 10px;
+}
+main a {
+  display: inline-block;
+  width: 100%;
+}
+main a:hover {
+  text-decoration: none;
+}
+main a::after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  background-color: black;
+  width: 0;
+}
+main a:hover::after {
+  width: 100%;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
