@@ -9845,6 +9845,7 @@ footer.flex {
   display: flex;
   flex-direction: row-reverse;
   border-top: 1px solid lightgray;
+  margin-top: 20px;
 }
 footer.flex address {
   width: 80%;
@@ -9896,21 +9897,98 @@ main {
   padding: 0 10px;
 }
 main a {
-  display: inline-block;
-  width: 100%;
+  position: relative;
 }
 main a:hover {
   text-decoration: none;
 }
 main a::after {
   content: "";
-  display: inline-block;
+  position: absolute;
+  width: 100%;
   height: 1px;
-  background-color: black;
-  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0056b3;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
 }
 main a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+main form input, main form textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 5px;
+}
+main form .nameEmail .row {
+  margin-bottom: 10px;
+}
+main form .gender input {
+  margin-right: 5px;
+}
+main form .gender input[type=radio] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  box-shadow: inset 0 0 0 2px #FFF;
+  transition: all 0.2s;
+  padding: 0;
+  border-radius: 10px;
+}
+main form .gender input[type=radio]:checked {
+  background-color: #000;
+}
+main form .message label {
   width: 100%;
+}
+main form .message textarea {
+  width: calc(100% + 10px);
+  min-height: 80px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+main form .terms {
+  margin-bottom: 10px;
+}
+main form .terms input[type=checkbox] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  box-shadow: inset 0 0 0 2px #FFF;
+  transition: all 0.2s;
+  padding: 0 !important;
+  border-radius: 5px;
+}
+main form .terms input[type=checkbox]:checked {
+  background-color: #000;
+}
+main form .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main form .buttons input {
+  font-weight: normal;
+  padding: 5px 20px;
+  color: black;
+  transition: all 0.2s;
+}
+main form .buttons input[type=submit] {
+  margin-right: -10px;
+}
+main form .buttons input[type=submit]:hover {
+  background-color: #a9dbb4;
+}
+main form .buttons input[type=reset]:hover {
+  background-color: #f1aeb4;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
