@@ -9724,14 +9724,16 @@ h3 {
     position: relative !important;
     bottom: 0 !important;
   }
+
+  #lipsum {
+    column-count: 1 !important;
+  }
 }
 body {
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
-}
-body a {
-  outline: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 header .logo h1 a {
@@ -9921,7 +9923,6 @@ main a:hover::after {
 main form input, main form textarea {
   border: 1px solid black;
   border-radius: 5px;
-  outline: none;
   padding: 5px 5px;
 }
 main form .nameEmail .row {
@@ -9989,6 +9990,65 @@ main form .buttons input[type=submit]:hover {
 }
 main form .buttons input[type=reset]:hover {
   background-color: #f1aeb4;
+}
+main #lipsum {
+  column-count: 2;
+}
+main #aboutBuilding {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 167px;
+  max-width: 375px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/bullseye-building.jpg");
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0 10px 0 0;
+}
+main #Directorman {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 167px;
+  max-width: 375px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/ceo.jpg");
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0 10px 0 0;
+}
+main .slide {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+main .mySlides {
+  display: none;
+}
+main .w3-left, main .w3-right, main .w3-badge {
+  cursor: pointer;
+}
+main .w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
+main .w3-content.w3-display-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+main .w3-content.w3-display-container img {
+  max-width: 598px;
+  height: 100%;
+  width: 100%;
+  max-height: 373px;
+}
+main .w3-content.w3-display-container .w3-center.w3-container.w3-section.w3-large.w3-text-black.w3-display-bottommiddle {
+  width: 100%;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

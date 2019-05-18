@@ -2,10 +2,8 @@
 body{
 	max-width: 1200px;
 	margin: 0 auto;
-	overflow: hidden;
-	a{
-		outline: none;
-	}
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 // Header

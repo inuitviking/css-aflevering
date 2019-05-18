@@ -1,7 +1,7 @@
 <main>
 	<section>
 		<h2>Contact Us</h2>
-		<form action="" method="post" class="col-4"> <!--I know this is wrong, but whatever-->
+		<form action="" method="post" id ="contactForm"> <!--I know this is wrong, but whatever-->
 			<div class="nameEmail">
 				<div class="row">
 					<label for="name" class="col-3">Name</label>

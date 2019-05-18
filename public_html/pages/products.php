@@ -1,5 +1,5 @@
 <main>
 	<section>
-		
+		<h2>Products</h2>
 	</section>
 </main>
