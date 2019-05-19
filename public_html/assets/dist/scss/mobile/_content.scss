@@ -2,3 +2,16 @@
 #lipsum{
 	column-count: 1 !important;
 }
+// ++++ PRODUCTS ++++
+.products{
+	// flex-wrap: nowrap;
+	a{
+		width: calc(100% - 20px) !important;
+		div.title{
+			flex-wrap: wrap;
+			p{
+				margin-left: 10px;
+			}
+		}
+	}
+}

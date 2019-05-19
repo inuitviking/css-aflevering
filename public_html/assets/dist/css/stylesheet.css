@@ -9728,6 +9728,16 @@ h3 {
   #lipsum {
     column-count: 1 !important;
   }
+
+  .products a {
+    width: calc(100% - 20px) !important;
+  }
+  .products a div.title {
+    flex-wrap: wrap;
+  }
+  .products a div.title p {
+    margin-left: 10px;
+  }
 }
 body {
   max-width: 1200px;
