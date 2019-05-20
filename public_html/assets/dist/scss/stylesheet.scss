@@ -1,6 +1,7 @@
 /* ++++ BOOTSTRAP / FONTAWESOME ++++ */
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import "reset.scss";
 //Wanted to run sass with this one, but that didn't work for some reason
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 

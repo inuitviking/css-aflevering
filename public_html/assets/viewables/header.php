@@ -6,8 +6,8 @@
 		<title><?=ucfirst($page) ?></title>
 		<!-- Dependencies -->
 		<script src="assets/dist/node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
-		<script src="assets/dist/node_modules/popper.js/dist/popper.js" charset="utf-8"></script>
-		<script src="assets/dist/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+		<!-- <script src="assets/dist/node_modules/popper.js/dist/popper.js" charset="utf-8"></script> -->
+		<!-- <script src="assets/dist/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" charset="utf-8"></script> -->
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<!-- My stuff -->
 		<script src="assets/dist/js/custom.js" charset="utf-8"></script>
